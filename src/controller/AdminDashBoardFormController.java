@@ -36,13 +36,22 @@ public class AdminDashBoardFormController {
 
     }
 
-    public void btnRoomOnAction(ActionEvent actionEvent) {
+    public void btnRoomOnAction(ActionEvent actionEvent) throws IOException {
+        Pane pane = FXMLLoader.load(getClass().getResource("../view/AdminRoomDetailsForm.fxml"));
+        rootHome.getChildren().setAll(pane);
+        new FadeIn(rootHome).play();
     }
 
-    public void btnMealOnAction(ActionEvent actionEvent) {
+    public void btnMealOnAction(ActionEvent actionEvent) throws IOException {
+        Pane pane = FXMLLoader.load(getClass().getResource("../view/AdminMealPackageForm.fxml"));
+        rootHome.getChildren().setAll(pane);
+        new FadeIn(rootHome).play();
     }
 
-    public void btnIncomeOnAction(ActionEvent actionEvent) {
+    public void btnIncomeOnAction(ActionEvent actionEvent) throws IOException {
+        Pane pane = FXMLLoader.load(getClass().getResource("../view/AdminIncomeForm.fxml"));
+        rootHome.getChildren().setAll(pane);
+        new FadeIn(rootHome).play();
     }
 
     public void btnLogOutOnAction(ActionEvent actionEvent) throws IOException {
