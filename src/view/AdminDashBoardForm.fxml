@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="829.0" prefWidth="1324.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashBoardFormController">
+   <children>
+      <Pane prefHeight="829.0" prefWidth="317.0" style="-fx-background-color: #263238;">
+         <children>
+            <Pane layoutX="8.0" layoutY="16.0" prefHeight="128.0" prefWidth="297.0" style="-fx-background-color: #2C3E50; -fx-background-radius: 20px;">
+               <effect>
+                  <DropShadow color="#00000091" offsetY="5.0" spread="0.01" />
+               </effect>
+               <children>
+                  <ImageView fitHeight="53.0" fitWidth="57.0" layoutX="120.0" layoutY="8.0">
+                     <image>
+                        <Image url="@assets/images/login2.png" />
+                     </image>
+                     <effect>
+                        <DropShadow color="#000000d8" height="0.0" offsetX="1.0" offsetY="2.0" radius="2.75" spread="0.1" width="13.0" />
+                     </effect>
+                  </ImageView>
+                  <Label layoutX="15.0" layoutY="64.0" text="BLUE OCEAN HOTEL" textFill="#2962ff">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#000000ec" height="0.0" offsetY="4.0" radius="2.5" spread="0.1" width="12.0" />
+                     </effect>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
