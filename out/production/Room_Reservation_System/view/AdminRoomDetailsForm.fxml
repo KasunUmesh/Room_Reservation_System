@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="831.0" prefWidth="1008.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminRoomDetailsFormController">
    <children>
@@ -17,5 +23,77 @@
             </Label>
          </children>
       </Pane>
+      <TextField layoutX="65.0" layoutY="149.0" prefHeight="42.0" prefWidth="371.0" style="-fx-background-color: #ECF0F1; -fx-background-radius: 10px;">
+         <effect>
+            <DropShadow color="#000000a4" height="9.0" offsetY="2.0" radius="3.0" width="5.0" />
+         </effect>
+      </TextField>
+      <Label layoutX="65.0" layoutY="113.0" text="Room Number">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="518.0" layoutY="113.0" text="Room Type">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="518.0" layoutY="149.0" prefHeight="42.0" prefWidth="433.0" style="-fx-background-color: #ECF0F1; -fx-background-radius: 10px;">
+         <effect>
+            <DropShadow color="#000000b0" height="15.0" offsetY="2.0" radius="4.75" width="6.0" />
+         </effect>
+      </ComboBox>
+      <TextField layoutX="65.0" layoutY="260.0" prefHeight="42.0" prefWidth="371.0" style="-fx-background-color: #ECF0F1; -fx-background-radius: 10px;">
+         <effect>
+            <DropShadow color="#000000a4" height="9.0" offsetY="2.0" radius="3.0" width="5.0" />
+         </effect>
+      </TextField>
+      <Label layoutX="65.0" layoutY="224.0" text="Additional">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="518.0" layoutY="260.0" prefHeight="42.0" prefWidth="178.0" style="-fx-background-color: #ECF0F1; -fx-background-radius: 10px;">
+         <effect>
+            <DropShadow color="#000000a4" height="9.0" offsetY="2.0" radius="3.0" width="5.0" />
+         </effect>
+      </TextField>
+      <Label layoutX="518.0" layoutY="224.0" text="Price">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="806.0" layoutY="260.0" prefHeight="42.0" prefWidth="145.0" style="-fx-background-color: #2980B9; -fx-background-radius: 20px;" text="Add Room" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="54.0" layoutY="403.0" prefHeight="344.0" prefWidth="899.0" stylesheets="@assets/style/TableStyleSheet.css">
+        <columns>
+          <TableColumn prefWidth="134.0" text="Room Number" />
+          <TableColumn prefWidth="250.0" text="Room Type" />
+            <TableColumn prefWidth="332.0" text="Additional" />
+            <TableColumn prefWidth="182.0" text="Price" />
+        </columns>
+      </TableView>
+      <TextField layoutX="589.0" layoutY="346.0" prefHeight="42.0" prefWidth="360.0" promptText="Search" style="-fx-background-color: #ECF0F1; -fx-background-radius: 20px;">
+         <effect>
+            <DropShadow color="#000000a4" height="9.0" offsetY="2.0" radius="3.0" width="5.0" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </TextField>
+      <FontAwesomeIconView fill="#8a8888" glyphName="SEARCH" layoutX="903.0" layoutY="373.0" size="18" />
+      <JFXButton layoutX="808.0" layoutY="768.0" prefHeight="42.0" prefWidth="145.0" style="-fx-background-color: #27AE60; -fx-background-radius: 20px;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="648.0" layoutY="768.0" prefHeight="42.0" prefWidth="145.0" style="-fx-background-color: #C0392B; -fx-background-radius: 20px;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>
