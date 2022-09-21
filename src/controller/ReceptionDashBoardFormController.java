@@ -30,7 +30,11 @@ public class ReceptionDashBoardFormController {
         new FadeIn(rootHome).play();
     }
 
-    public void btnAddGuestOnAction(ActionEvent actionEvent) {
+    public void btnAddGuestOnAction(ActionEvent actionEvent) throws IOException {
+        Pane pane = FXMLLoader.load(getClass().getResource("../view/ReceptionAddGuestForm.fxml"));
+        rootHome.getChildren().setAll(pane);
+
+        new FadeIn(rootHome).play();
     }
 
     public void btnGuestDetailsOnAction(ActionEvent actionEvent) {
