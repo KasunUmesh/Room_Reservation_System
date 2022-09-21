@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="831.0" prefWidth="1008.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionGuestDetailFormController">
+   <children>
+      <Pane prefHeight="77.0" prefWidth="1008.0" style="-fx-background-color: #263238;">
+         <children>
+            <Label layoutX="375.0" layoutY="25.0" text="GUEST DETAILS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView layoutX="21.0" layoutY="176.0" prefHeight="575.0" prefWidth="964.0" stylesheets="@assets/style/TableStyleSheet.css">
+         <columns>
+            <TableColumn prefWidth="100.0" text="Guest Num" />
+            <TableColumn text="Room Num" />
+            <TableColumn prefWidth="168.0" text="Name" />
+            <TableColumn prefWidth="75.0" text="NIC" />
+            <TableColumn prefWidth="106.0" text="Tel" />
+            <TableColumn prefWidth="167.0" text="Address" />
+            <TableColumn prefWidth="136.0" text="Arrival Date" />
+            <TableColumn prefWidth="131.0" text="Departure Date" />
+         </columns>
+      </TableView>
+      <TextField layoutX="625.0" layoutY="121.0" prefHeight="42.0" prefWidth="360.0" promptText="Search" style="-fx-background-color: #ECF0F1; -fx-background-radius: 20px;">
+         <effect>
+            <DropShadow color="#000000a4" height="9.0" offsetY="2.0" radius="3.0" width="5.0" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </TextField>
+      <FontAwesomeIconView fill="#8a8888" glyphName="SEARCH" layoutX="939.0" layoutY="148.0" size="18" />
+      <JFXButton layoutX="808.0" layoutY="768.0" prefHeight="42.0" prefWidth="145.0" style="-fx-background-color: #F1C40F; -fx-background-radius: 20px;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="642.0" layoutY="768.0" prefHeight="42.0" prefWidth="145.0" style="-fx-background-color: #C0392B; -fx-background-radius: 20px;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
