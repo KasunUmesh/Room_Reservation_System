@@ -6,6 +6,8 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
@@ -39,7 +41,22 @@ public class LoginFormController {
             primaryStage.centerOnScreen();
             primaryStage.setResizable(false);
 
+        } else if (cmbPosition.getValue() == "Receptionist") {
+
+            Parent parent = FXMLLoader.load(getClass().getResource("../view/ReceptionDashBoardForm.fxml"));
+            Scene scene = new Scene(parent);
+
+            Stage primaryStage = (Stage) this.root.getScene().getWindow();
+
+            primaryStage.setScene(scene);
+            primaryStage.centerOnScreen();
+            primaryStage.setResizable(false);
+
+        }else {
+            new Alert(Alert.AlertType.WARNING,"Try agian", ButtonType.OK).show();
         }
+
+
 
     }
 }
