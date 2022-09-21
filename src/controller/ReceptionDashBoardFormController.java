@@ -47,7 +47,11 @@ public class ReceptionDashBoardFormController {
         new FadeIn(rootHome).play();
     }
 
-    public void btnAvailableRoomOnAction(ActionEvent actionEvent) {
+    public void btnAvailableRoomOnAction(ActionEvent actionEvent) throws IOException {
+        Pane pane = FXMLLoader.load(getClass().getResource("../view/ReceptionAvailableRoomForm.fxml"));
+        rootHome.getChildren().setAll(pane);
+
+        new FadeIn(rootHome).play();
     }
 
     public void btnLogOutOnAction(ActionEvent actionEvent) throws IOException {
