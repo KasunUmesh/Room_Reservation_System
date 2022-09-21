@@ -71,6 +71,10 @@ public class ReceptionDashBoardFormController {
         new FadeIn(rootHome).play();
     }
 
-    public void btnMealPlansOnAction(ActionEvent actionEvent) {
+    public void btnMealPlansOnAction(ActionEvent actionEvent) throws IOException {
+        Pane pane = FXMLLoader.load(getClass().getResource("../view/ReceptionMealPlanForm.fxml"));
+        rootHome.getChildren().setAll(pane);
+
+        new FadeIn(rootHome).play();
     }
 }
