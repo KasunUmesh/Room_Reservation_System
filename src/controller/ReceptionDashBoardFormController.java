@@ -64,7 +64,11 @@ public class ReceptionDashBoardFormController {
         primaryStage.centerOnScreen();
     }
 
-    public void btnMaintenanceRoomOnAction(ActionEvent actionEvent) {
+    public void btnMaintenanceRoomOnAction(ActionEvent actionEvent) throws IOException {
+        Pane pane = FXMLLoader.load(getClass().getResource("../view/MaintenanceRoomForm.fxml"));
+        rootHome.getChildren().setAll(pane);
+
+        new FadeIn(rootHome).play();
     }
 
     public void btnMealPlansOnAction(ActionEvent actionEvent) {
